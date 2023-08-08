@@ -12,6 +12,7 @@ export interface Note {
     category: Category;
     content: string;
     dates: [] | Date[];
+    active: boolean;
 }
 
 export interface NewNote {
@@ -21,8 +22,7 @@ export interface NewNote {
 }
 
 export interface NotesState {
-    activeNotes: [] | Note[];
-    archivedNotes: [] | Note[];
+    notes: [] | Note[];
 }
 
 export enum NotesActionTypes {
